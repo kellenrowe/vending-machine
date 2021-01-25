@@ -1,0 +1,15 @@
+.VendingMachine-Img-Container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 0 0 10%;
+}
+
+.VendingMachine-Btn {
+    width: 33%;
+}
+
+.VendingMachine-Btn img {
+    height: 20%;
+    margin: 0px;
+}
