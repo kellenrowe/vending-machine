@@ -10,7 +10,7 @@ const OUZO_IMG = "https://www.sheknows.com/wp-content/uploads/2018/08/greek-ouzo
  * 
  *  VendingMachine links to { Ouzo, Sake, Bourbon }
  *  
- *  App -> VendingMachine
+ *  App -> route / -> VendingMachine
  * */
 
 function VendingMachine() {

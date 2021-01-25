@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import NavBar from "./NavBar";
 import Ouzo from "./Ouzo";
@@ -15,18 +15,23 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NavBar />
-        <Route exact path="/ouzo">
-          <Ouzo />
+        <Switch>
+          <Route exact path="/ouzo">
+            <Ouzo />
+          </Route>
+          <Route exact path="/bourbon">
+            <Bourbon />
+          </Route>
+          <Route exact path="/Sake">
+            <Sake />
+          </Route>
+          <Route exact path="/">
+            <VendingMachine />
+          </Route>
+          <Route>
+            Paragraph not found
         </Route>
-        <Route exact path="/bourbon">
-          <Bourbon />
-        </Route>
-        <Route exact path="/Sake">
-          <Sake />
-        </Route>
-        <Route exact path="/">
-          <VendingMachine />
-        </Route>
+        </Switch>
       </BrowserRouter>
     </div>
   );
